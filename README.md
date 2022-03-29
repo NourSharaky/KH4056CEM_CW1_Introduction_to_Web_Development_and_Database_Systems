@@ -1,3 +1,5 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 NOUR SHARAKY - 2020000149.
 
 Coventry University - The Knowledge Hub Universities branch - Bsc of Ethical Hacking and Cybersecurity - Level 4.
@@ -5,7 +7,6 @@ Coventry University - The Knowledge Hub Universities branch - Bsc of Ethical Hac
 KH4056CEM Introduction to Web Development and Database Systems - Coursework 1.
 
 My Sticky Notes is a Web project adapting the idea of digital sticky notes.
-
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -39,3 +40,4 @@ Packages Specifications: \
 &emsp;&emsp; Drag & Drop to ReOrder Sticky Notes. \
 &emsp;&emsp; To Do List & Sticky Notes Hybrid.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
