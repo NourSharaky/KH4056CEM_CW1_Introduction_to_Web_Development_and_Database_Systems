@@ -25,17 +25,17 @@ Packages Specifications: \
 &emsp;&emsp; Colorful Sticky Notes Styles.\
 &emsp;&emsp; Text Cannot Be ReEdited. \
 &emsp;&emsp; Notes Cannot Be Moved. \
-  Pro:
-    Add an Unlimited Number of Sticky Notes.
-    Right Click Menu to Edit & Delete Sticky Notes.
-    Colorful Sticky Notes Styles.
-    Add Your Own Title.
-    Drag and Drop to ReOrder Sticky Notes.
-  Premium:
-    Add an Unlimited Number of Sticky Notes.
-    Right Click Menu to Edit & Delete Sticky Notes.
-    Colorful Sticky Notes Styles.
-    Add Your Own Title.
-    Drag & Drop to ReOrder Sticky Notes.
-    To Do List & Sticky Notes Hybrid.
+&emsp; Pro: \
+&emsp;&emsp; Add an Unlimited Number of Sticky Notes. \
+&emsp;&emsp; Right Click Menu to Edit & Delete Sticky Notes. \
+&emsp;&emsp; Colorful Sticky Notes Styles. \
+&emsp;&emsp; Add Your Own Title. \
+&emsp;&emsp; Drag and Drop to ReOrder Sticky Notes. \ 
+&emsp; Premium: \
+&emsp;&emsp; Add an Unlimited Number of Sticky Notes.
+&emsp;&emsp; Right Click Menu to Edit & Delete Sticky Notes.
+&emsp;&emsp; Colorful Sticky Notes Styles.
+&emsp;&emsp; Add Your Own Title.
+&emsp;&emsp; Drag & Drop to ReOrder Sticky Notes.
+&emsp;&emsp; To Do List & Sticky Notes Hybrid.
 
