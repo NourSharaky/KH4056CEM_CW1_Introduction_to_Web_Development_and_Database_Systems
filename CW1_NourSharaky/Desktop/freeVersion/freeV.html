@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>My Sticky Notes</title>
+    <!-- adding icon logo in the title bar -->
+    <link rel="shortcut icon" type="image/png" href="../pics/logo.jpg" />
+    <!-- set content's width according to current screen width -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- linking the styles.css sheet -->
+    <link rel="stylesheet" href="freeV.css">
+    <!-- linking my fontawesome kit to be able to add icons  -->
+    <script src="https://kit.fontawesome.com/51f1a2fdea.js" crossorigin="anonymous"></script>
+  </head>
+<!-- _______________________________________________________________________ -->
+  <body>
+
+    <!-- Section 1 - Navigation Bar -->
+    <div class="navigationBar">
+
+      <nav>
+        <!-- Main Responsive Navigation bar/ Drop Down Menu -->
+        <ul>
+          <!-- Drop Down Menu icon - appears and disappers according to screen width -->
+          <li class="dropDownIcon" ><a href="#"><i class="fa-solid fa-circle-chevron-down down"></i></a></li>
+          <!-- redirects user to Website's home page -->
+          <li class="get-li displayNone"><a href="../homepage/home.html">Home</a></li>
+          <!-- Clear All button to remove all current sticky notes -->
+          <li class="get-li displayNone"><a href="freeV.html">Clear All</a></li>
+          <li class="get-li displayNone"><a href="../homepage/home.html#packages">Packages</a></li>
+        </ul>
+      </nav>
+
+      <!-- Add new sticky notes button -->
+      <button id="addbtn" class="btn" type="button" name="button">+</button>
+      <!-- The title of the Sticky Notes page -->
+      <span class="title">My Sticky Notes</span>
+      <!-- Standard Version Logo -->
+      <span class="package">&#9416;</span>
+
+    </div>
+
+<!-- _______________________________________________________________________ -->
+
+    <!-- Section 2 - Typing in the sticky notes' initial content -->
+    <div class="newNoteWindow" style="display:none">
+
+      <!-- the window in which the user types in the note content -->
+      <div class="noteWindow">
+
+        <form class="" action="index.html" method="post">
+
+          <div class="logos">
+            <!-- check button to add note with its current content -->
+            <i id="check-icon" class="fa-regular fa-circle-check"></i>
+            <!-- x icon to exit note window -->
+            <i id="x-icon" class="fa-regular fa-circle-xmark"></i>
+          </div>
+
+          <!-- The text area in which the user types the note content -->
+        <textarea id="note-text" placeholder="Write Note..." ></textarea>
+
+        </form>
+      </div>
+    </div>
+
+<!-- _______________________________________________________________________ -->
+
+    <!-- Section 3 - Added Sticky notes are placed here -->
+    <div class="addedNotes"></div>
+
+<!-- _______________________________________________________________________ -->
+
+    <!-- linking the JavaScript file -->
+    <script type="text/javascript" src="freeV.js"></script>
+  </body>
+</html>
