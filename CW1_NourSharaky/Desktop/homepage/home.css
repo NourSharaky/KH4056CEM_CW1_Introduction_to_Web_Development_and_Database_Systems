@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+  /* padding: 0;
+  margin: 0; */
+  margin-top: 0;
+  color: white;
+  font-family: "Avenir Next LT Pro", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(61, 61, 61);
+  font-size: 20px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.section1, .section3, .section5{
+  margin-left: 8%;
+  margin-right: 8%
+}
+
+.section2, .section4{
+  margin: 0;
+  padding: 0;
+  background-image:url('../pics/home.jpg');
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  width: 100%;
+  min-height: 600px;
+  /* height: 100%; */
+  height: auto;
+}
+
+h1{
+  text-decoration: underline #E6AF2E;
+}
+
+.s2 p, .s2 h1, .s4 h1{
+  color: black;
+
+}
+
+.section2 .s2, .section4 .s4{
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
+  width: 80%;
+  background-color: #F3F8F2;
+  padding: 20px;
+  height: auto;
+}
+
+/* __________________________________________________________________________ */
+
+/* Section 0 - Navigation bar */
+
+.navbar {
+  /* margin: -1% -1% 1% -1%;
+  margin-top: 0; */
+  font-size: 20px;
+  background-image: linear-gradient(260deg, #5d737e 0%, #EE5656 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+  padding-top: 2%
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-links:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 35px;
+  padding-top: 10px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+/* __________________________________________________________________________ */
+
+/* Section 1 - Home (Intro about note taking) */
+.home{
+  text-align: justify;
+}
+
+/* __________________________________________________________________________ */
+
+/* Section 3 - Packages benefits and their price plans */
+.packages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+
+ /* each package's styling */
+ .packages .card {
+  width: 32%;
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+ }
+
+ .packages .card .head,
+ .packages .card .body {
+  background-color: #FFF;
+  padding: 24px 16px;
+ }
+
+ /* for the prices(ticket) to apper and push head upwards */
+ .packages .card .head {
+  color: #333;
+  font-size: 19px;
+  text-transform: uppercase;
+  transform: translateY(30px);
+  transition: transform .3s linear;
+  border-bottom: 1px solid #F2F2F2;
+ }
+
+ .packages .card:hover .head {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+ }
+
+ /* prices div */
+ .packages .card .ticket {
+  color: #FFF;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+  font-size: 22px;
+  font-weight: bold;
+ }
+
+ .packages .free .ticket {
+  background-color: #ee5656;
+ }
+
+ .packages .pro .ticket {
+  background-color: #5d737e;
+ }
+
+ .packages .premium .ticket {
+  background-color: #e6af2e;
+ }
+
+/* for the prices(ticket) to appear and push body downwards */
+ .packages .card .body {
+  transform: translateY(-30px);
+  transition: transform .3s linear;
+ }
+
+ .packages .card:hover .body {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  }
+
+/* package specifications div    */
+ .packages .card ul {
+  padding: 15px;
+ }
+
+ .packages .card ul li {
+  font-size: 15px;
+  color: #333;
+  text-align: left;
+  text-align: justify;
+ }
+
+/* try now buttons */
+ .packages .card .btn {
+  margin-top: 32px;
+  padding: 9px 16px;
+  outline: none;
+  font-size: 14px;
+  width:80%;
+  border: 1px solid #555;
+  background-color: #555;
+  color: #333;
+  cursor: pointer;
+  transition: all .2s linear;
+ }
+
+ .packages .card .btn:hover {
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.5);
+ }
+
+ .packages .free .btn {
+  background: #ee5656;
+  border-color: #ee5656;
+  color: white;
+ }
+
+ .packages .pro .btn {
+  background: #5d737e;
+  border-color: #5d737e;
+  color: white;
+ }
+
+ .packages .premium .btn {
+  background: #e6af2e;
+  border-color: #e6af2e;
+  color: white;
+ }
+
+/* __________________________________________________________________________ */
+
+/* Section 4 - Reviews */
+ .mySlides {
+   display: none;
+ }
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* review text */
+.review{
+	position: relative;
+	margin: auto;
+  padding: 10%;
+  text-align: justify;
+  color: white;
+  width: 100%;
+  min-height: 200px;
+  background-image: linear-gradient(to bottom right, #3E4E50 0%, #EE5656 50%, #E6AF2E 100% );
+}
+
+/* cite */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  font-weight: bold;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.action {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Fading effect */
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* __________________________________________________________________________ */
+
+/* Section 5 - Contact form */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: black
+}
+option{
+  color: black;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.github{
+  fill: white;
+  position: relative;
+  min-height: 50px;
+  min-width: 50px;
+  margin: 0;
+  margin-left: 90%;
+  cursor: pointer;
+}
+
+/* __________________________________________________________________________ */
+
+/* Section 6 - Responsiveness */
+
+ @media screen and (max-width: 550px) {
+   .navbar {
+     margin: -1% -1% 1% -1%;
+   }
+  .packages .card {
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+ }
+
+ @media screen and (max-width: 940px) {
+   .logo{
+     font-size: 25px;
+   }
+ }
+
+@media screen and (min-width: 760px) {
+  * {
+    box-sizing: border-box;
+    margin-top: 0;
+    color: white;
+  }
+  .navbar {
+    margin: -1% -1% 1% -1%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  .packages {
+   justify-content: space-around;
+  }
+  .packages .card {
+   width: 45%;
+  }
+}

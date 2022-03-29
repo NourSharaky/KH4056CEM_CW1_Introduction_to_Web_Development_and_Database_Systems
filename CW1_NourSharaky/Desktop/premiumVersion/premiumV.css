@@ -1,0 +1,446 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: rgb(61, 61, 61);
+  font-size: 30px;
+  font-family: "Avenir Next LT Pro", cursive, Arial, sans-serif;
+}
+
+/* __________________________________________________________________________ */
+
+/* Section 1 - Navigation Bar */
+.navigationBar{
+  background-color: rgb(61, 61, 61);
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 10;
+}
+
+/* Main Responsive Navigation bar/ Drop Down Menu  */
+.navigationBar nav ul{
+  background-color: #EE5656;
+  margin: 0;
+  padding:0;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigationBar nav ul li{
+  float: left;
+  width: 25%;
+  padding: 0 calc(25%/6);
+}
+
+.navigationBar nav ul li a {
+  color: #f9f7f3;
+  font-size:20px;
+  text-decoration: none;
+  text-align: center;
+  width:100% ;
+  display: inline-block;
+  padding:15px;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  /* text-transform: uppercase */
+}
+
+.navigationBar nav ul li a:hover{
+    background-color:#F9F7F3;
+    color: #5D737E;
+}
+
+/* to not view the drop-down icon while in full display */
+.dropDownIcon{
+  display: none;
+}
+
+/* Add new sticky notes button */
+.btn{
+  background-color: #ee5656;
+  color: #f9f7f3;
+  border: 0px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.btn:hover{
+  background: #251605;
+}
+
+.title{
+  color:#f9f7f3;
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: #ee5656;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  font-family: cursive;
+}
+
+.package{
+  color: #f9f7f3;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.textEditing{
+  background-color: #f9f7f3;
+  display: flex;
+  justify-content: space-around;
+}
+
+.edit-btns{
+  background-color: inherit;
+  font-size:15px;
+  width: 5%;
+  padding: 0.5%;
+  outline: none;
+  border: none;
+  text-align: center;
+  cursor:pointer;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out ;
+}
+
+.edit-btns:hover{
+  background-color: rgb(200, 200, 200);
+}
+/* __________________________________________________________________________ */
+
+/* Section 2 - Typing in the sticky notes' initial content */
+
+.newNoteWindow{
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 1;
+  }
+
+/* the window in which the user types in the note content */
+.noteWindow{
+  margin-top: 7%;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* check and x icons */
+.logos{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#check-icon, #x-icon{
+  color: grey;
+  cursor: pointer;
+}
+
+#check-icon{
+  position: absolute;
+  padding: 10px;
+  padding-right: 45px;
+}
+
+#x-icon{
+  position: absolute;
+  padding: 10px;
+}
+
+#note-text{
+  box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+  outline: none;
+  border: none;
+  width: 275px;
+  height: 275px;
+  padding: 25px;
+  padding-top: 45px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+}
+
+/* __________________________________________________________________________ */
+
+/* Section 3 - Sticky Notes and To Do list Section */
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* to do list */
+
+.ToDoListDiv{
+  width: 35%;
+  margin: 30px;
+  min-height: 500px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.75);
+}
+
+.tasksDiv{
+  width: 80%;
+  height: 70%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.tasksDiv::-webkit-scrollbar{
+  background-color: transparent;
+  width: 5px;
+}
+
+.tasksDiv::-webkit-scrollbar-thumb{
+  background-color: rgb(7, 78, 210);
+}
+
+.ToDoInput{
+  outline: none;
+  border: none;
+  width: 80%;
+  height: 30px;
+  margin-top: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  /* to avoid oveflowing padding, width or margin */
+  box-sizing: border-box;
+}
+
+.addToDoBtn{
+  outline: none;
+  border: none;
+  width: 80%;
+  height: 30px;
+  margin: 10px 0;
+  color: #f9f7f3;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.addToDoBtn:hover{
+  background-color: rgb(7, 78, 210);
+}
+
+.item{
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  width: 99%;
+  height: 30px;
+  background-color: #f9f7f3;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1)
+}
+
+.delete{
+  position:absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+/* sticky notes */
+
+.addedNotes{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 2%;
+  width:65%;
+}
+
+.note{
+  width:250px ;
+  height: 250px;
+  color: black;
+  font-size:20px ;
+  padding: 25px ;
+  margin-top: 10px;
+  border-radius: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+  box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.5);
+}
+
+.note::-webkit-scrollbar{
+  background-color: transparent;
+  width: 5px;
+  height: 5px;
+}
+
+.note::-webkit-scrollbar-thumb{
+  background-color: rgba(0,0,0,0.75);
+  border-radius: 20px;
+}
+
+.note.over {
+  border: 3px dashed #666;
+}
+
+.text{
+  width: inherit;
+  outline: none;
+  border-radius: inherit;
+  background-color: inherit;
+  font-size: 20px;
+}
+
+/* __________________________________________________________________________ */
+
+/* contextMenu */
+#menu{
+  position: fixed;
+  z-index: 100;
+  width: 150px;
+  background: #1b1a1a;
+  border-radius: 5px;
+  display: none;
+}
+
+#menu.visible{
+  display: block;
+}
+
+.menuItem{
+  padding: 8px 10px;
+  font-size: 15px;
+  color: #eee;
+  cursor: pointer;
+  border-radius: inherit;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.menuItem:hover{
+  background: #343434;
+}
+/* __________________________________________________________________________ */
+
+/* Responsiveness */
+
+@media screen and (max-width:500px){
+
+  /* navigation bar */
+
+  .navigationBar ul{
+    /* change direction of flex from row to column */
+    flex-direction: column;
+  }
+
+  .navigationBar nav ul li{
+    /* for the hover effect to take the whole width of the screen */
+    width: 100%;
+    /* remove the extra paddings */
+    padding: 0;
+  }
+
+  .navigationBar nav ul .dropDownIcon{
+    /* to show the hidden drop down menu icon */
+    display: block;
+    width: 10%;
+    /* align the icon to the left */
+    margin-left: 85%;
+  }
+
+  .down {
+    color: #f9f7f3;
+  }
+
+  /* (this applies to all list items except the first child) */
+  nav ul li:not(:nth-child(1)) a{
+    /* align list items to the left and give padding from the left only */
+    text-align: left;
+    padding-left: 20px;
+    /* to avoid oveflowing padding, width or margin */
+    box-sizing: border-box;
+    border: 0.5px solid #f9f7f3;
+  }
+
+  .displayNone{
+    display: none;
+  }
+
+  .displayBlock{
+    display: block;
+  }
+
+  /* add new sticky note button */
+  .btn{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+
+  /* title of notes */
+  .title , .package{
+    font-size: 30px;
+  }
+
+  /* text editing buttons div */
+  .textEditing{
+    margin-top: 10px;
+  }
+
+  /* new note window */
+  .noteWindow{
+    margin-top: 15%;
+  }
+
+  /* div that stores notes and to do list */
+  .container{
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  /* to do list */
+  .ToDoListDiv{
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  /* added sticky notes div */
+  .addedNotes{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    font-size: 20px;
+  }
+
+  /* each note added */
+  .note{
+    margin-top: 10px;
+  }
+
+}

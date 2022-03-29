@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>My Sticky Notes</title>
+    <!-- adding icon logo in the title bar -->
+    <link rel="shortcut icon" type="image/png" href="../pics/logo.jpg" />
+    <!-- set content's width according to current screen width -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- linking the styles.css sheet -->
+    <link rel="stylesheet" href="premiumV.css">
+    <!-- linking my fontawesome kit to be able to add icons  -->
+    <script src="https://kit.fontawesome.com/51f1a2fdea.js" crossorigin="anonymous"></script>
+  </head>
+  <!-- _______________________________________________________________________ -->
+  <body>
+
+    <!-- Section 1 - Navigation Bar -->
+    <div class="navigationBar">
+
+      <nav>
+        <!-- Main Responsive Navigation bar/ Drop Down Menu -->
+        <ul>
+          <!-- Drop Down Menu icon - appears and disappers according to screen width -->
+          <li class="dropDownIcon"><a href="#"><i class="fa-solid fa-circle-chevron-down down"></i></a></li>
+          <!-- redirects user to Website's home page -->
+          <li class="get-li displayNone"><a href="../homepage/home.html">Home</a></li>
+          <!-- Reset button to remove all current sticky notes -->
+          <li class="get-li displayNone"><a href="premiumV.html" title="Empty page content">Clear All</a></li>
+          <!-- Setting button to change the background colors -->
+          <li class="get-li displayNone"><a href="../homepage/home.html#packages">Packages</a></li>
+        </ul>
+      </nav>
+
+      <!-- Add new sticky notes button -->
+      <button id="addbtn" class="btn" type="button" name="button" title="Add New Note">+</button>
+      <!-- The title of the Sticky Notes page -->
+      <span class="title" contenteditable="true"><b>My Sticky Notes </b></span>
+      <!-- Premium Version Logo -->
+      <span class="package">&#9413;+</span>
+
+      <!-- Text editing buttons to adjust text's style -->
+      <div class="textEditing">
+        <button class="edit-btns" title="Bold" id="bold" onClick="bold()"><i class="fa-solid fa-bold"></i></button>
+        <button class="edit-btns" title="Italic" id="italic" onClick="italic()"><i class="fa-solid fa-italic"></i></button>
+        <button class="edit-btns" title="Underline" id="underline" onClick="underline()"><i class="fa-solid fa-underline"></i></button>
+        <button class="edit-btns" title="strike Through" id="strikeThrough" onClick="strikeThrough()"><i class="fa-solid fa-strikethrough"></i></button>
+        <button class="edit-btns" title="Insert an Unordered List" id="unorderedList" onClick="uList()"><i class="fa-solid fa-list-ul"></i></button>
+        <button class="edit-btns" title="Insert an Ordered List" id="orderedList" onClick="oList()"><i class="fa-solid fa-list-ol"></i></button>
+        <button class="edit-btns" title="Ident Text" id="indent" onClick="indent()"><i class="fa-solid fa-indent"></i></i></button>
+        <button class="edit-btns" title="Justify Text" id="justify" onClick="justify()"><i class="fa-solid fa-align-justify"></i></button>
+        <button class="edit-btns" title="Justify Text Left" id="justifyLeft" onClick="justifyLeft()"><i class="fa-solid fa-align-left"></i></button>
+        <button class="edit-btns" title="Justify Text Right" id="justifyRight" onClick="justifyRight()"><i class="fa-solid fa-align-right"></i></button>
+        <button class="edit-btns" title="Copy" id="copy" onClick="copy()"><i class="fa-solid fa-copy"></i></button>
+        <button class="edit-btns" title="Cut" id="cut" onClick="cut()"><i class="fa-solid fa-scissors"></i></button>
+        <button class="edit-btns" title="Paste" id="paste" onClick="paste()"><i class="fa-solid fa-paste"></i></button>
+        <button class="edit-btns" title="Undo" id="undo" onClick="undo()"><i class="fa-solid fa-rotate-left"></i></button>
+        <button class="edit-btns" title="Redo" id="redo" onClick="redo()"><i class="fa-solid fa-rotate-right"></i></button>
+      </div>
+    </div>
+
+<!-- _______________________________________________________________________ -->
+
+    <!-- Section 2 - Typing in the sticky notes' initial content -->
+    <div class="newNoteWindow" style="display:none">
+
+      <!-- the window in which the user types in the note content -->
+      <div class="noteWindow">
+
+        <form class="" action="index.html" method="post">
+
+          <div class="logos">
+            <!-- check button to add note with its current content -->
+            <i id="check-icon" class="fa-regular fa-circle-check"></i>
+            <!-- x icon to exit note window -->
+            <i id="x-icon" class="fa-regular fa-circle-xmark"></i>
+          </div>
+
+          <!-- The text area in which the user types the note content -->
+        <textarea id="note-text" placeholder="Write Note..."></textarea>
+
+        </form>
+      </div>
+    </div>
+
+<!-- _______________________________________________________________________ -->
+
+    <!-- Section 3 - Sticky Notes and To Do list Section -->
+    <div class="container">
+      <!-- Added Sticky notes are placed here -->
+      <div class="addedNotes"></div>
+      <!-- To Do List -->
+      <div class="ToDoListDiv">
+        <!-- This is where the user types in their new task -->
+        <input type="text" name="" value="" class="ToDoInput" placeholder="Add a new task...">
+        <!-- Add new task button -->
+        <button type="button" name="button" class="addToDoBtn">Add</button>
+      <!-- The div where the new tasks are added -->
+      <div class="tasksDiv"></div>
+      </div>
+    </div>
+<!-- _______________________________________________________________________ -->
+    <!-- Section 4 - ContextMenu that appears on right click -->
+    <div id="menu">
+      <div class="menuItem" id="edit"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</div>
+      <div class="menuItem" id="dlt"><i class="fa fa-trash" aria-hidden="true"></i> Delete</div>
+    </div>
+
+<!-- _______________________________________________________________________ -->
+    <!-- linking the JavaScript file -->
+    <script type="text/javascript" src="premiumV.js"></script>
+  </body>
+</html>
