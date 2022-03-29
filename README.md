@@ -32,10 +32,10 @@ Packages Specifications: \
 &emsp;&emsp; Add Your Own Title. \
 &emsp;&emsp; Drag and Drop to ReOrder Sticky Notes. \ 
 &emsp; Premium: \
-&emsp;&emsp; Add an Unlimited Number of Sticky Notes.
-&emsp;&emsp; Right Click Menu to Edit & Delete Sticky Notes.
-&emsp;&emsp; Colorful Sticky Notes Styles.
-&emsp;&emsp; Add Your Own Title.
-&emsp;&emsp; Drag & Drop to ReOrder Sticky Notes.
+&emsp;&emsp; Add an Unlimited Number of Sticky Notes. \
+&emsp;&emsp; Right Click Menu to Edit & Delete Sticky Notes. \
+&emsp;&emsp; Colorful Sticky Notes Styles. \
+&emsp;&emsp; Add Your Own Title. \
+&emsp;&emsp; Drag & Drop to ReOrder Sticky Notes. \
 &emsp;&emsp; To Do List & Sticky Notes Hybrid.
 
