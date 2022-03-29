@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-NOUR SHARAKY - 2020000149.
+NOUR SHARAKY - 2020000149 - NS00149@tkh.edu.eg
 
 Coventry University - The Knowledge Hub Universities branch - Bsc of Ethical Hacking and Cybersecurity - Level 4.
 
