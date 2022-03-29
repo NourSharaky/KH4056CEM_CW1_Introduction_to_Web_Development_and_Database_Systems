@@ -10,8 +10,10 @@ My Sticky Notes is a Web project adapting the idea of digital sticky notes.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-My Sticky Notes is a simple note taking application developed and adapted by a university student for university students to cover all their needs when it comes to easily taking neat and efficient notes. \ \
-My Sticky Notes grants students the opportunity to add and modify quick notes and to do lists in order to facilitate their learning and studying experience.\
+My Sticky Notes is a simple note taking application developed and adapted by a university student for university students to cover all their needs when it comes to easily taking neat and efficient notes. 
+
+My Sticky Notes grants students the opportunity to add and modify quick notes and to do lists in order to facilitate their learning and studying experience.
+
 My Sticky Notes’ mission is to help students manage their information more easily. Notes, reminders, lists……My Sticky Notes helps you keep track of all of these visually on a single online canvas instead of notes stuck to your computer, desk or fridge.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
